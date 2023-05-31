@@ -1,60 +1,63 @@
 <script >
 export default {
     name : "AppHeader" ,
-    
-        topics : [
+    data () {
+        return {
+            topics : [
             {
-                name : CHARACTERS ,
+                name : "CHARACTERS" ,
                 active : false ,
                 href : "#"
             },
             {
-                name : COMICS ,
+                name : "COMICS" ,
                 active : true,
                 href : "#"
             },
             {
-                name : MOVIES ,
+                name : "MOVIES" ,
                 active : false ,
                 href : "#"
             },
             {
-                name : TV ,
+                name : "TV" ,
                 active : false , 
                 href : "#"
             },
             {
-                name : GAMES ,
+                name : "GAMES" ,
                 active : false ,
                 href : "#"
             },
             {
-                name : COLLECTIBLES ,
+                name : "COLLECTIBLES" ,
                 active : false ,
                 href : "#"
             },
             {
-                name : VIDEOS ,
+                name : "VIDEOS" ,
                 active : false ,
                 href : "#"
             },
             {
-                name : FANS ,
+                name : "FANS" ,
                 active : false ,
                 href : "#"
             },
             {
-                name : NEWS ,
+                name : "NEWS" ,
                 active : false ,
                 href : "#"
             },
             {
-                name : SHOP ,
+                name : "SHOP" ,
                 active : false ,
                 href : "#"
             }
         ]
-    
+        }
+        
+    }
 }
 </script>
 
@@ -77,13 +80,14 @@ export default {
 <style scoped lang="scss">
 
     header{
-        height: 150px;
+        height: 120px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .container-img{
             margin-left: 200px;
+            height: 80px;
         }
 
         ul{
@@ -103,7 +107,7 @@ export default {
                 text-decoration: none;
                 color: #292929;
                 font-weight: 600;
-                font-size: 20px;
+                font-size: 15px;
             }
 
             li:hover{
