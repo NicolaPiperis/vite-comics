@@ -80,14 +80,13 @@ export default {
 <style scoped lang="scss">
 
     header{
-        height: 120px;
+        height: 135px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .container-img{
             margin-left: 200px;
-            height: 80px;
         }
 
         ul{
