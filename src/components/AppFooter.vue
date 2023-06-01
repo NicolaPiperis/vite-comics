@@ -15,7 +15,71 @@ export default {
     <footer>
 
         <section id="info">
-            
+
+            <!-- FIRST COL -->
+            <div class="info-container">
+                
+                <div class="info-list">
+
+                    <h3>DC COMICS</h3>
+                    <ul>
+                        <li>Characters</li>
+                        <li>Comics</li>
+                        <li>Movies</li>
+                        <li>TV</li>
+                        <li>Games</li>
+                        <li>Videos</li>
+                        <li>News</li>
+                    </ul>
+
+                    <h3>SHOP</h3>
+                    <ul>
+                        <li>Shop DC</li>
+                        <li>Shop DC collectibles</li>
+                    </ul>
+
+                </div>
+
+                <div class="info-list">
+
+                    <h3>DC</h3>
+                    <ul>
+                        <li>Terms of use</li>
+                        <li>Privicy policy (New)</li>
+                        <li>Ad choices</li>
+                        <li>Advertising</li>
+                        <li>Jobs</li>
+                        <li>Subscription</li>
+                        <li>Talent workshop</li>
+                        <li>CPSC Certificates</li>
+                        <li>Ratings</li>
+                        <li>Shop help</li>
+                        <li>Contact us</li>
+                    </ul>
+
+                    
+                </div>
+
+                <div class="info-list">
+
+                    <h3>SITIES</h3>
+                    <ul>
+                        <li>DC</li>
+                        <li>MAD magazine</li>
+                        <li>DC Kids</li>
+                        <li>TV</li>
+                        <li>DC Universe</li>
+                        <li>DC Power visa</li>
+                    </ul>
+
+                    
+                </div>
+
+            </div>
+
+            <!-- SECOND COL -->
+           
+
         </section>
 
         <section id="contacts">
@@ -45,7 +109,30 @@ export default {
 
     #info{
         height: 390px;
-        background-image: url("../../public/images/footer-bg.jpg")
+        background-image: url("../../public/images/footer-bg.jpg");
+        
+
+        .info-container{
+            padding: 50px 0 50px 200px;
+            display: flex;
+            gap: 30px;
+            
+            h3{
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            ul{
+                color: rgba(255, 255, 255, 0.63);
+                font-size: 11px;
+                line-height: 200%;
+                margin-bottom: 20px;
+
+                li{
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
     #contacts{
