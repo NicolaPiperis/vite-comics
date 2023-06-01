@@ -1,6 +1,9 @@
 <script >
 export default {
-    name : "MainContent" 
+    name : "MainContent",
+    props: {
+        details: Object
+    }
 }
         
     
@@ -10,8 +13,8 @@ export default {
 <template>
 
     <div class="card-comic">
-        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        <h4>BATMAN</h4>
+        <img :src="details.thumb" :alt="details.type">
+        <div>{{ details.series }}</div>
     </div>
 
 </template>
@@ -21,7 +24,7 @@ export default {
 .card-comic{
     width: calc((100% / 6) - 50px);
 
-    h4{
+    div{
     color: white;
     text-align: left;
     padding: 15px 0;
