@@ -16,7 +16,6 @@ export default {
 
         <section id="info">
 
-            <!-- FIRST COL -->
             <div class="info-container">
                 
                 <div class="info-list">
@@ -77,8 +76,9 @@ export default {
 
             </div>
 
-            <!-- SECOND COL -->
-           
+            <div class="big-logo">
+                <img src="../../public/images/dc-logo-bg.png" alt="">
+            </div>
 
         </section>
 
@@ -108,9 +108,11 @@ export default {
 <style scoped lang="scss">
 
     #info{
+        display: flex;
+        justify-content: space-between;
         height: 390px;
         background-image: url("../../public/images/footer-bg.jpg");
-        
+        position: relative;
 
         .info-container{
             padding: 50px 0 50px 200px;
@@ -133,6 +135,14 @@ export default {
                 }
             }
         }
+
+        .big-logo{
+            margin-right: 200px;
+            position: absolute;
+            right: 0;
+            top: -100px;
+            z-index: 0;
+        }
     }
 
     #contacts{
@@ -141,6 +151,8 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        z-index: 99;
 
         .register{
             margin-left: 200px;

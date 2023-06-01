@@ -1,6 +1,8 @@
 <script >
+// import MainContent from './components/MainContent.vue' ;
 export default {
     name : "AppMain" ,
+   
     data () {
         return {
             buyItems : [
@@ -35,10 +37,76 @@ export default {
 
     <main>
 
-        <section class="empty">
+        <section class="hero">
+            <div>
+                <strong>CURRENT SERIES</strong>
+            </div>
+        </section>
 
-            <div class="content">
-                - -&gt;Content goes here&lt;- -
+        <section class="comics">
+
+            <div class="container-comics">
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
+                <div class="card-comic">
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+                    <h4>BATMAN</h4>
+                </div>
+
             </div>
 
         </section>
@@ -62,24 +130,52 @@ export default {
 </template>
 
 <style scoped lang="scss">
-    .empty{
-        height: 135px;
+    .hero{
+        height: 400px;
+        background-image: url(../../public/images/jumbotron.jpg);
+        position: relative;
+
+        div{
+            text-align: center;
+            color: white;
+            background-color: #0282f9;
+            position: absolute;
+            padding: 16px;
+            width: 200px;
+            height: 50px;
+            left: 200px;
+           bottom: -25px;
+        }
+    }
+
+    .comics{
+        height: 900px;
         background-color: #1c1c1c;
 
-        .content{
-            height: 100%;
-            font-size: 30px;
-            font-weight: 600;
-            color: white;
-            margin-left: 200px;
-            display: flex;
-            align-items: center;
+            .container-comics{
+                padding: 100px 200px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 50px;
+
+            .card-comic{
+            width: calc((100% / 6) - 50px);
+
+                h4{
+                    color: white;
+                    text-align: left;
+                    padding: 15px 0;
+                }
+                
+            }
         }
     }
 
     .buy{
         height: 140px;
         background-color: #0282f9;
+        position: relative;
+        z-index: 99;
 
         .tools-container{
             margin: 0 200px;
