@@ -65,7 +65,7 @@ export default {
 
     <header>
         <div class="container-img">
-            <img src="../images/dc-logo.png" alt="">
+            <img src="images/dc-logo.png" alt="">
         </div>
 
         <ul>
